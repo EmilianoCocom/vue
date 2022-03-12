@@ -3,38 +3,20 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
 // import components
-import Home from './components/Home'
-import Contact from './components/Contact'
-import Show from './components/blog/Show'
-import Create from './components/blog/Create'
-import Edit from './components/blog/Edit'
+import Dashboard from './components/Dashboard'
+import Blogs from './views/blogs/Index'
 
 // routes
 const routes = [
     {
-        name: 'home',
+        name: 'dashboard',
         path: '/',
-        component: Home
+        component: Dashboard
     },
     {
-        name: 'contact',
-        path: '/contact',
-        component: Contact
-    },
-    {
-        name: 'show',
-        path: '/show',
-        component: Show
-    },
-    {
-        name: 'create',
-        path: '/create',
-        component: Create
-    },
-    {
-        name: 'edit',
-        path: '/edit/:id',
-        component: Edit
+        name: 'blogs',
+        path: '/blogs',
+        component: Blogs
     },
 ]
 

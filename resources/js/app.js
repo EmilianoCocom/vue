@@ -27,7 +27,7 @@ app.use(VueAxios, axios)
 
 app.mount('#app')
 
-app.use(PrimeVue)
+app.use(PrimeVue.install)
 
 // use components prime vue
 registerPrimeComponents(app)
